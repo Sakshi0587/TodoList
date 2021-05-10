@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import ListItems from './ListItems';
 import {library} from '@fortawesome/fontawesome-svg-core';
@@ -50,7 +50,8 @@ class App extends React.Component {
      const items = this.state.items;
      items.map(item => 
       {
-         if(item.key === key){
+         if(item.key === key)
+         {
             item.text = text;
          }
       }
